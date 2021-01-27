@@ -5,24 +5,26 @@
   "questions": [
     {
       "image": "https://media0.giphy.com/media/rbRlURYMrUNfG/source.gif",
-      "title": "Python",
-      "description": "Python",
-      "answer": 2,
+      "title": "Qual é a sintaxe correta: ",
+      "description": "Gerar 'Hello World' em Python",
+      "answer": 3,
       "alternatives": [
-        ".elemento",
-        "*elemento",
-        "#elemento",
-        "%elemento"
+        " p('Hello World')",
+        "echo('Hello World)';",
+        " echo Hello World",
+        "print('Hello World')"
       ]
     },
     {
       "image": "https://media2.giphy.com/media/KAq5w47R9rmTuvWOWa/giphy.gif",
-      "title": "Python",
-      "description": "Python",
+      "title": "Como você insere ",
+      "description": "Comentários no código Python?",
       "answer": 0,
       "alternatives": [
-         "Python",
-         "Python"
+         "#This is a comment",
+         " /*This is a comment*/",
+         " //This is a comment"
+       
       ]
     }
   ],
