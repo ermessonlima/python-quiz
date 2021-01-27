@@ -4,9 +4,9 @@
   "description": "Teste os seus conhecimentos sobre Python",
   "questions": [
     {
-      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-      "title": "Como fazer um seletor por id via CSS?",
-      "description": "Essa é pra aquecer",
+      "image": "https://media0.giphy.com/media/rbRlURYMrUNfG/source.gif",
+      "title": "Python",
+      "description": "Python",
       "answer": 2,
       "alternatives": [
         ".elemento",
@@ -16,13 +16,13 @@
       ]
     },
     {
-      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-      "title": "Como fazer um background gradiente com css?",
-      "description": "Faz tempo em haha",
+      "image": "https://media2.giphy.com/media/KAq5w47R9rmTuvWOWa/giphy.gif",
+      "title": "Python",
+      "description": "Python",
       "answer": 0,
       "alternatives": [
-         "background: linear-gradient(#e66465, #9198e5);",
-         "background: gradient(#e66465, #9198e5);"
+         "Python",
+         "Python"
       ]
     }
   ],
