@@ -3,7 +3,8 @@ import styled from 'styled-components';
 export const WidgetPrimary = styled.div`
   margin-top: 24px;
   margin-bottom: 24px;
-  border: 0px solid ${({ theme }) => theme.colors.primary};
+  border: 1px solid ${({ theme }) => theme.colors.primary};
+  
   background-color: ${({ theme }) => theme.colors.mainBg};
   border-radius: 4px;
   overflow: hidden;
@@ -22,6 +23,21 @@ export const WidgetPrimary = styled.div`
     font-weight: 400;
     line-height: 1;
   }
+ 
+
+  @keyframes loading {
+    0% {
+      transform: rotate(5);
+    }
+    50% {
+      transform: rotate(5deg);
+    }
+    50% {
+      transform: rotate(-2deg);
+    }
+  }
+
+animation: loading 2s linear infinite;
 `;
 export const WidgetSecondary = styled.div`
   margin-top: 24px;

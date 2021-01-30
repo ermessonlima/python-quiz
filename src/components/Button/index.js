@@ -23,6 +23,8 @@ const Button = styled.button`
     background-color: #979797;
     cursor: not-allowed;
   }
+
+  
 `;
 
 Button.propTypes = {
