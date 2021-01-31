@@ -32,6 +32,16 @@ export const WidgetPrimary = styled.div`
   }
 
 animation: loading 2s linear infinite;
+
+
+
+
+@media screen and (max-width: 505px) {
+  width:330px;
+  height: 330px;
+  position: absolute;
+  margin-top: -150px;
+}
 `;
 
 export const WidgetButton = styled.div`

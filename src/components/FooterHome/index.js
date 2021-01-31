@@ -23,6 +23,11 @@ background-color: #ffffff10;
       text-decoration: underline;
     }
   }
+  @media screen and (max-width: 505px) {
+    margin-top: 203px;
+    margin-bottom: -110px;
+  }
+
 `;
 
 export default function Footer(props) {

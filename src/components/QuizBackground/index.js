@@ -31,6 +31,7 @@ const QuizBackground = styled.div`
       z-index: 10;
     }
   }
+  
 `;
 
 export default QuizBackground;

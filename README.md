@@ -3,7 +3,13 @@
 
 ![Capa do Projeto](/_docs/pythonquiz.PNG)
 
+
 ![Capa do Projeto](/_docs/pythonquiz-2.PNG)
+
+# Vitrine da Imersão 
+> [Vitrine da Imersão](https://aluraquiz-base.alura-challenges.vercel.app/contribuidores)
+
+
 # Contribuidores 
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->

@@ -25,18 +25,21 @@ const Wrapper = styled.div`
   @media screen and (max-width: 600px) {
     margin: auto;
     margin-left: 320px;
-    margin-top: 50px;
+    margin-top: 70px;
     padding: 15px;
     position:absolute;
   }
+
   @media screen and (max-width: 505px) {
     margin: auto;
-    margin-left: 310px;
-    margin-top: 250px;
+    margin-left: -280px;
+    margin-top: 10px;
     padding: 15px;
     position:absolute;
   }
-  
+  @media (max-width:400px){
+    
+  }
 `;
 
 const SVGWrapper = styled.svg`

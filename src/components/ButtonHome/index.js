@@ -5,6 +5,7 @@ const Button = styled.button`
 
   min-width: 300px;
   min-height: 60px;
+  
   font-family: 'Nunito', sans-serif;
   font-size: 22px;
   text-transform: uppercase;
@@ -19,7 +20,7 @@ const Button = styled.button`
   cursor: pointer;
   outline: none;
   position: absolute;
-  padding: 10px;
+
 
 
 button::before {
@@ -76,7 +77,11 @@ button:hover::after, button:focus::after {
     opacity: 0;
   }
 }
-
+@media screen and (max-width: 484px) {
+margin-left:-35px;
+margin-top:250px;
+  
+}
 `;
 
 Button.propTypes = {

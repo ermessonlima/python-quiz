@@ -18,29 +18,17 @@ const Wrapper = styled.div`
  margin-top: -620px;
  margin-left: 135px;
  margin-right: -185px;
+ @media screen and (max-width: 505px) {
+  margin-top: -520px;
+  margin-right: -125px;
+}
+@media (max-width:400px){
+  
+}
 `;
 
-const SVGWrapper = styled.svg`
-  fill: ${({ theme }) => theme.colors.secondary};
-  color: ${({ theme }) => theme.colors.contrastText};
-  cursor: pointer;
-  &:hover .octo-arm{
-    animation:octocat-wave 560ms ease-in-out
-  }
-  @keyframes octocat-wave{
-    0%,100%{transform:rotate(0)}
-    20%,60%{transform:rotate(-25deg)}
-    40%,80%{transform:rotate(10deg)}
-  }
-  @media (max-width:500px){
-    &:hover .octo-arm{
-      animation:none
-    }
-    & .octo-arm{
-      animation:octocat-wave 560ms ease-in-out
-    }
-  }
-`;
+
+
 
 
 

@@ -17,9 +17,7 @@ const QuizBackground = styled.div`
       content: "";
       background-size: cover;
     background-position: center;
-      background-image:
-        linear-gradient(transparent, ${({ theme }) => theme.colors.mainBg}),
-        url(${({ backgroundImage }) => backgroundImage});
+      background-image:none;
       display: block;
       width: 100%;
       height: 210px;
@@ -37,8 +35,13 @@ const QuizBackground = styled.div`
   @media (max-width:600px){
     flex-direction: column;
   }
-
-
+ 
+  @media screen and (max-width: 505px) {
+    background-image: none;
+  }
+  @media (max-width:400px){
+    background-image: none;
+  }
 `;
 
 export default QuizBackground;
