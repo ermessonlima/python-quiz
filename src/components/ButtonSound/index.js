@@ -22,6 +22,21 @@ const Wrapper = styled.div`
   img {
     border: 3px solid #ffffff;
   }
+  @media screen and (max-width: 600px) {
+    margin: auto;
+    margin-left: 320px;
+    margin-top: 50px;
+    padding: 15px;
+    position:absolute;
+  }
+  @media screen and (max-width: 505px) {
+    margin: auto;
+    margin-left: 310px;
+    margin-top: 250px;
+    padding: 15px;
+    position:absolute;
+  }
+  
 `;
 
 const SVGWrapper = styled.svg`

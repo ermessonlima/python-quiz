@@ -177,8 +177,8 @@ function ResultWidget({ results }) {
             <Button type="submit" disabled={!hasAlternativeSelected} onClick={handleButtonClick}>
               Confirmar
             </Button>
-            {/*      {isQuestionSubmited && isCorrect && <p>Você acertou!</p>}
-           {isQuestionSubmited && !isCorrect && <p>Você errou!</p>}    */}
+                  {isQuestionSubmited && isCorrect && <p>Você acertou!</p>}
+           {isQuestionSubmited && !isCorrect && <p>Você errou!</p>}    
           
 
 

@@ -31,10 +31,17 @@ export const QuizContainer = styled.div`
   max-width: 350px;
   padding-top: 0px;
   margin: auto 10%;
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 600px) {
     margin: auto;
     padding: 15px;
+    position:absolute;
   }
+  @media screen and (max-width: 1100px) {
+    margin: auto;
+    padding: 15px;
+    position:absolute;
+  }
+
 `;
 
 export default function Home() {

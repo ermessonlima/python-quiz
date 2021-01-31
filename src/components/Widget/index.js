@@ -78,6 +78,16 @@ export const WidgetResposta = styled.div`
   }
 
 animation: loading 2s linear infinite;
+
+@media screen and (max-width:1257px) {
+
+  margin-right: 100px;
+}
+@media screen and (max-width:1161px) {
+
+  display:none;
+}
+
 `;
 
 export const WidgetSecondary = styled.div`

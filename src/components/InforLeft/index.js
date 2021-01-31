@@ -27,6 +27,35 @@ const FooterWrapper = styled.footer`
       text-decoration: underline;
     }
   }
+  @media (max-width:500px){
+    &:hover .octo-arm{
+      animation:none
+    }
+    & .octo-arm{
+      animation:octocat-wave 560ms ease-in-out
+    }
+  }
+  @media screen and (max-width:1300px) {
+
+    margin-left: 100px;
+  }
+  @media screen and (max-width:1100px) {
+
+    margin-left: 200px;
+  }
+  @media screen and (max-width:1000px) {
+
+    margin-left: 400px;
+  }
+  @media screen and (max-width:825px) {
+
+    display:none;
+  }
+  @media screen and (max-width: 600px) {
+
+    display:none;
+  }
+
 `;
 
 export default function Footer(props) {

@@ -34,6 +34,11 @@ const QuizBackground = styled.div`
       z-index: 10;
     }
   }
+  @media (max-width:600px){
+    flex-direction: column;
+  }
+
+
 `;
 
 export default QuizBackground;
