@@ -39,6 +39,47 @@ export const WidgetPrimary = styled.div`
 
 animation: loading 2s linear infinite;
 `;
+
+export const WidgetResposta = styled.div`
+  margin-top: 24px;
+  margin-bottom: 24px;
+  border: 1px solid ${({ theme }) => theme.colors.primary};
+  
+  background-color: ${({ theme }) => theme.colors.mainBg};
+  border-radius: 4px;
+  overflow: hidden;
+  -webkit-box-shadow: -2px -2px 18px 6px rgba(255,255,255,1);
+  -moz-box-shadow: -2px -2px 18px 6px rgba(255,255,255,1);
+  box-shadow: -2px -2px 18px 6px rgba(255,255,255,1);
+
+  h1, h2, h3 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 0;
+  }
+  p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+  }
+ 
+
+  @keyframes loading {
+    0% {
+      transform: rotate(5);
+    }
+    50% {
+      transform: rotate(5deg);
+    }
+    50% {
+      transform: rotate(-2deg);
+    }
+  }
+
+animation: loading 2s linear infinite;
+`;
+
 export const WidgetSecondary = styled.div`
   margin-top: 24px;
   margin-bottom: 24px;

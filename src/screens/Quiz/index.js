@@ -2,7 +2,7 @@
 import React from 'react';
 import { Lottie } from '@crello/react-lottie';
 // import db from '../../../db.json';
-import  { WidgetPrimary, Header, Content, Topic } from '../../components/Widget';
+import  { WidgetPrimary, Header, Content, Topic, WidgetResposta } from '../../components/Widget';
 import QuizLogo from '../../components/QuizLogo';
 import QuizBackground from '../../components/QuizBackground';
 import QuizContainer from '../../components/QuizContainer';
@@ -11,11 +11,15 @@ import Button from '../../components/Button';
 import BackLinkArrow from '../../components/BackLinkArrow';
 
 import loadingAnimation from './animations/loading.json';
+import boopSfx from '../../../pages/sounds/clicka.mp3';
+import useSound from 'use-sound';
+
 
 function ResultWidget({ results }) {
     return (
       <WidgetPrimary>
         <Header>
+        <BackLinkArrow href="/" />
           Tela de Resultado:
         </Header>
   
@@ -48,6 +52,8 @@ function ResultWidget({ results }) {
             ))}
           </ul>
         </Content>
+
+
       </WidgetPrimary>
     );
   }
@@ -83,8 +89,27 @@ function ResultWidget({ results }) {
     const questionId = `question__${questionIndex}`;
     const isCorrect = selectedAlternative === question.answer;
     const hasAlternativeSelected = selectedAlternative !== undefined;
-  
+    const [isChecked, setIsChecked] = React.useState(true);
+
+
+    const [playOn] = useSound(
+      boopSfx,
+      { volume: 0.25 }
+    );
+    const [playOff] = useSound(
+      boopSfx,
+      { volume: 0.25 }
+    );
+    
+    function handleButtonClick (){
+    
+    
+      isChecked ? playOff() : playOn();
+    }
+    
     return (
+
+     <>
       <WidgetPrimary>
         <Header>
           <BackLinkArrow href="/" />
@@ -149,14 +174,43 @@ function ResultWidget({ results }) {
             {/* <pre>
               {JSON.stringify(question, null, 4)}
             </pre> */}
-            <Button type="submit" disabled={!hasAlternativeSelected}>
+            <Button type="submit" disabled={!hasAlternativeSelected} onClick={handleButtonClick}>
               Confirmar
             </Button>
-            {isQuestionSubmited && isCorrect && <p>Você acertou!</p>}
-            {isQuestionSubmited && !isCorrect && <p>Você errou!</p>}
+            {/*      {isQuestionSubmited && isCorrect && <p>Você acertou!</p>}
+           {isQuestionSubmited && !isCorrect && <p>Você errou!</p>}    */}
+          
+
+
+
+
           </AlternativesForm>
         </Content>
+        
       </WidgetPrimary>
+      
+      <WidgetResposta style={{marginLeft: 900, position:'absolute', marginTop: -600}}>
+        <Header>
+      
+          <h3>
+            {`Sua resposta está: `}
+          </h3>
+        </Header>
+  
+      
+        <Content>
+         
+            {isQuestionSubmited && isCorrect && <h1 style={{color:"#4CAF50"}}>Correta!</h1>}
+            {isQuestionSubmited && !isCorrect && <h1 style={{color:"#FF5722"}}>Errada :(</h1>}
+
+
+
+
+        </Content>
+        
+      </WidgetResposta>
+
+</>
     );
   }
   
@@ -216,7 +270,7 @@ function ResultWidget({ results }) {
               addResult={addResult}
             />
           )}
-  
+ 
           {screenState === screenStates.LOADING && <LoadingWidget />}
   
           {screenState === screenStates.RESULT && <ResultWidget results={results} />}

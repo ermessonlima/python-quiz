@@ -15,8 +15,13 @@ const ModalBackground = styled.div`
         align-items:center;`;
 
         const ModalArea = styled.div`
-        background-color: #fff;
+        background-color: rgba(0,0,0,0.8);
         padding:10px;
+        width: 400px;
+        height:500px;
+        -webkit-box-shadow: -2px -2px 18px 6px rgba(76,149,212,1);
+        -moz-box-shadow: -2px -2px 18px 6px rgba(76,149,212,1);
+        box-shadow: -2px -2px 18px 6px rgba(76,149,212,1);
 
       `;
 

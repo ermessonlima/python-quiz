@@ -13,7 +13,8 @@ import Footer from '../../src/components/Footer';
 import GitHubCorner from '../../src/components/GitHubCorner';
 import Button from '../../src/components/Button';
 import Link from '../../src/components/Link';
-
+import useSound from 'use-sound';
+import boopSfx from '../../pages/sounds/clicka.mp3';
 // const BackgroundImage = styled.div`
 //   background-image: url(${db.bg});
 //   flex: 1;
@@ -35,7 +36,22 @@ export const QuizContainer = styled.div`
 export default function Home() {
   const router = useRouter();
   const [name, setName] = React.useState('');
+  const [isChecked, setIsChecked] = React.useState(true);
 
+
+  const [playOn] = useSound(
+    boopSfx,
+    { volume: 0.25 }
+  );
+  const [playOff] = useSound(
+    boopSfx,
+    { volume: 0.25 }
+  );
+
+  function handleButtonClick (){
+
+    isChecked ? playOff() : playOn();
+  }
   return (
     <QuizBackground backgroundImage={db.bg}>
       <Head>
@@ -72,7 +88,7 @@ export default function Home() {
                 placeholder="Diz ai seu nome"
                 value={name}
               />
-              <Button type="submit" disabled={name.length === 0}>
+              <Button type="submit" disabled={name.length === 0} onClick={handleButtonClick}>
                 {`Jogar ${name}`}
               </Button>
             </form>

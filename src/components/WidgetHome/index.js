@@ -183,7 +183,7 @@ content: '';
   min-width: calc(60px + 12px);
   min-height: calc(60px + 12px);
 
-  box-shadow: 0 0 60px rgba(0,255,203,.90);
+  box-shadow: 0 0 60px rgba(0,255,203,.64);
   position: absolute;
   top: 50%;
   left: 50%;
