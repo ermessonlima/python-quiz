@@ -1,28 +1,9 @@
-# AluraQuiz Base
-
-Seja bem vindo ao projeto base do AluraQuiz!!! Passos fundamentais:
-- Marque esse projeto com uma estrela
-- Siga as instruções das aulas e conteúdo extra da Imersão React Next.js
-- Faça o deploy na Vercel e compartilhe
-
-![Capa do Projeto](/_docs/aluraquiz-base.png)
-
-## Como colocar o meu projeto na vitrine da imersão?
-
-> [Vitrine da Imersão](https://aluraquiz-base.alura-challenges.vercel.app/contribuidores)
-
-- [Siga os passos](/CONTRIBUTING.md)
-
-## Onde está o Layout base?
-- [Link](https://www.figma.com/file/cg1MIzSRRss8ggpypQbmdD/AluraQuiz?node-id=0%3A1)
+# AluraQuiz
 
 
-## Como pegar cores tema diferentes para minha app?
+![Capa do Projeto](/_docs/pythonquiz.PNG)
 
-Você pode dar uma olhada nesse link e separar uma palheta que combine com sua imagem de background :) :
-- https://material-ui.com/customization/color/#playground
-
-
+![Capa do Projeto](/_docs/pythonquiz-2.PNG)
 # Contribuidores 
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
