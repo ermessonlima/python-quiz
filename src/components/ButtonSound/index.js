@@ -33,13 +33,12 @@ const Wrapper = styled.div`
   @media screen and (max-width: 505px) {
     margin: auto;
     margin-left: -280px;
-    margin-top: 10px;
+    margin-top: 15px;
     padding: 15px;
     position:absolute;
+    z-index: 10;
   }
-  @media (max-width:400px){
-    
-  }
+ 
 `;
 
 const SVGWrapper = styled.svg`

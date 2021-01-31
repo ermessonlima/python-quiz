@@ -77,6 +77,12 @@ button:hover::after, button:focus::after {
     opacity: 0;
   }
 }
+@media screen and (max-width: 506px) {
+  margin-left:-30px;
+  margin-top:250px;
+    
+  }
+
 @media screen and (max-width: 484px) {
 margin-left:-35px;
 margin-top:250px;
