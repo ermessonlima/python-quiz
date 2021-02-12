@@ -80,13 +80,14 @@ export default function ButtonInfor({ projectUrl }) {
 
             <Modal  visible ={modalVisible} setVisible={setModalVisible}>
               
-            <h1>INSTRUTORES NESSA IMERSÃO</h1>
-            <p style={{color:'#00d8f3', fontSize:25}}>Mario Souto, DevSoutinho</p>
-            <p>instrutor da Alura, engenheiro Nubank</p>
-            <p style={{color:'#00d8f3', fontSize:25}}>Juliana Amoasei</p>
-            <p>dev e coordenadora da Alura</p>
-            <p style={{color:'#00d8f3', fontSize:25}}>Paulo Silveira</p>
-            <p>CEO da Alura</p>
+            <h1>INSTRUTORES DE PYTHON</h1>
+            <p style={{color:'#00d8f3', fontSize:25}}>GUILHERME</p>
+            <p>PROFESSOR E ORIENTADOR</p>
+            <p style={{color:'#00d8f3', fontSize:25}}>Ermesson Lima</p>
+            <p>Cursando Sistemas de Informação</p>
+            <p style={{color:'#00d8f3', fontSize:25}}>Karol Monteiro</p>
+            <p>Cursando Engenharia de produção</p>
+        
         <div style={{  justifyContent:'center', display:'flex'}}>
             <button className="button" onClick={handleButtonClick} style={{width:120, height: 45, borderRadius: 15, background: '#4FD1C5'}}>
               <p style={{color:'#ffffff', fontWeight:'bold' }}>Fechar</p>          

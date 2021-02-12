@@ -93,8 +93,7 @@ function playSound (){
         />
 
       <QuizContainer>
-        <QuizLogo />
-
+      
         
         <WidgetPrimary 
           as={motion.section}

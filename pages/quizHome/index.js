@@ -56,12 +56,12 @@ export default function Home() {
     <QuizBackground backgroundImage={db.bg}>
       <Head>
       <title>
-          AluraQuiz -
+      
           {db.title}
         </title>
       </Head>
       <QuizContainer>
-        <QuizLogo />
+ 
         <WidgetPrimary
           as={motion.section}
           transition={{ delay: 0.5, duration: 0.5 }}
@@ -106,30 +106,7 @@ export default function Home() {
         animate="show"
       >
 
-          <Content>
-            <h1>Quizes da Galera</h1>
-
-            <ul>
-              {db.external.map((linkExterno) => {
-                const [projectName, githubUser] = linkExterno
-                  .replace(/\//g, '')
-                  .replace('https:', '')
-                  .replace('.vercel.app', '')
-                  .split('.');
-
-                return (
-                  <li key={linkExterno}>
-                    <Topic
-                      as={Link}
-                      href={`/quiz/${projectName}___${githubUser}`}
-                    >
-                      {`${githubUser}/${projectName}`}
-                    </Topic>
-                  </li>
-                );
-              })}
-            </ul>
-          </Content>
+    
         </WidgetSecondary>
         <Footer
           as={motion.footer}

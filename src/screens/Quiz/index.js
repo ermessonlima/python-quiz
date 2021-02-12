@@ -260,7 +260,7 @@ function ResultWidget({ results }) {
     return (
       <QuizBackground backgroundImage={bg}>
         <QuizContainer>
-          <QuizLogo />
+       
           {screenState === screenStates.QUIZ && (
             <QuestionWidget
               question={question}
