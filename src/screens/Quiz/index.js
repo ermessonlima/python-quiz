@@ -245,7 +245,7 @@ function ResultWidget({ results }) {
       setTimeout(() => {
         setScreenState(screenStates.QUIZ);
       }, 1 * 2000);
-    // nasce === didMount
+    // nasce === didMou
     }, []);
   
     function handleSubmitQuiz() {
